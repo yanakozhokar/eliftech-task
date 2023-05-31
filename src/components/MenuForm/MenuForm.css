@@ -1,0 +1,36 @@
+.menu-form {
+  position: relative;
+  border-radius: 10px;
+}
+
+.menu-form__input {
+  padding: 12px 40px 12px 12px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.menu-form__input:focus {
+  outline: #ffffff;
+}
+
+.menu-form__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  height: 100%;
+  background-color: transparent;
+  border: unset;
+}
+
+.menu-form__icon {
+  width: 20px;
+  height: 20px;
+  fill: #55595c;
+}

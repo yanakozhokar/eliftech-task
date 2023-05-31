@@ -1,0 +1,32 @@
+.special-offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.special-orders-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f44336;
+}
+
+.special-offers-icon {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
+
+.special-orders-text {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
+}
