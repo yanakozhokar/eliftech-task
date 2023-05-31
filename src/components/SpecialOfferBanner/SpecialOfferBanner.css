@@ -1,0 +1,104 @@
+.special-offer__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 30px;
+  width: 100%;
+  height: 230px;
+  border-radius: 10px;
+  background-image: url('../../images/special-offer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.special-offer__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(221, 221, 221, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.special-offer__card {
+  position: relative;
+  z-index: 1;
+  padding: 40px 30px 30px;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+  background-image: url('../../images/special-offer.png');
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.special-offer__card:hover {
+  cursor: pointer;
+}
+
+.special-offer__card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(62, 62, 62, 0.5);
+}
+
+.special-offer__card:hover::before {
+  background-color: rgba(62, 62, 62, 0.8);
+}
+
+.special-offer__title {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.special-offer__description {
+  position: relative;
+  z-index: 2;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.special-offer__btn {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: 15px 25px;
+  color: #fff;
+  border: unset;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  background-color: #f44336;
+}
+
+.special-offer__card:hover .special-offer__btn {
+  background-color: #df392d;
+  transition: all 0.4s;
+}
+
+.special-offer__info-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
