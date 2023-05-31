@@ -1,0 +1,13 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  overflow-x: auto;
+}
+
+.products {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
