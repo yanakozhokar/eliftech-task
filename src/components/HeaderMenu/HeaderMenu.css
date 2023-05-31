@@ -1,0 +1,19 @@
+.header-menu__list {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+.header-menu__item {
+  padding: 14px 19px;
+  border-left: 1px solid #f9f9f9;
+  border-right: 1px solid #f9f9f9;
+}
+
+.header-menu__item:hover,
+.header-menu__item:focus {
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
