@@ -1,0 +1,31 @@
+.cart__complete-table {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.cart__complete-table-head-row,
+.cart__complete-table-body-row {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+.cart__complete-table-head-row {
+  background-color: #f8f8f8;
+}
+
+.cart__complete-table-body-row {
+  border-bottom: 1px solid #e2e2e9;
+}
+
+.cart__complete-table-head-title {
+  padding: 10px 15px;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.cart__complete-table-body-item {
+  padding: 10px 15px;
+}
