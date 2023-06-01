@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/eliftech-task/static/css/main.4f22992f.css",
-    "main.js": "/eliftech-task/static/js/main.93dea4d9.js",
+    "main.js": "/eliftech-task/static/js/main.a2fa2e7d.js",
     "static/media/special-offer.png": "/eliftech-task/static/media/special-offer.a7e6082f1795f7c5e270.png",
     "static/media/logo.png": "/eliftech-task/static/media/logo.4cd65162847bf817025a.png",
     "static/media/chicken-burgers.svg": "/eliftech-task/static/media/chicken-burgers.5f0612a5288fa7431efd7858da7915d4.svg",
     "static/media/special-burgers.svg": "/eliftech-task/static/media/special-burgers.68dc9067e91c62cd625289d7bcd1d24b.svg",
     "static/media/sides.svg": "/eliftech-task/static/media/sides.492b57f09e2dcdd65e24e2a75ba530a2.svg",
     "static/media/drinks.svg": "/eliftech-task/static/media/drinks.9a67f76f2c0d740bbabc5d8ab4880734.svg",
-    "static/media/wraps.svg": "/eliftech-task/static/media/wraps.7edd8cbaf839416dc450194ed8f2e2c5.svg",
+    "static/media/wraps.svg": "/eliftech-task/static/media/wraps.a5610697a20e49b30e3e9b279ca28a6f.svg",
     "static/media/burgers.svg": "/eliftech-task/static/media/burgers.72b92c17f8a8fda7f3906a7c0a50a834.svg",
     "static/media/sandwiches.svg": "/eliftech-task/static/media/sandwiches.93d1e1c7d5705ca736aba41972f3f4bd.svg",
     "static/media/grills.svg": "/eliftech-task/static/media/grills.9a754b1df3f41adf52d31e11270d2eaa.svg",
@@ -17,10 +17,10 @@
     "index.html": "/eliftech-task/index.html",
     "static/media/fork-and-knife.svg": "/eliftech-task/static/media/fork-and-knife.03c09c2a4c09795c74fd201fcf86d972.svg",
     "main.4f22992f.css.map": "/eliftech-task/static/css/main.4f22992f.css.map",
-    "main.93dea4d9.js.map": "/eliftech-task/static/js/main.93dea4d9.js.map"
+    "main.a2fa2e7d.js.map": "/eliftech-task/static/js/main.a2fa2e7d.js.map"
   },
   "entrypoints": [
     "static/css/main.4f22992f.css",
-    "static/js/main.93dea4d9.js"
+    "static/js/main.a2fa2e7d.js"
   ]
 }
