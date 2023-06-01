@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { SpecialOfferBanner } from 'components/SpecialOfferBanner/SpecialOfferBanner';
 import { FeaturedProducts } from 'components/FeaturedProducts/FeaturedProducts';
 import { SpecialBurgers } from 'components/SpecialBurgers/SpecialBurgers';
-import './Gallery.css';
+import { ChickenBurgers } from 'components/ChickenBurgers/ChickenBurgers';
 import { Burgers } from 'components/Burgers/Burgers';
 import { Sandwiches } from 'components/Sandwiches/Sandwiches';
 import { Wraps } from 'components/Wraps/Wraps';
@@ -10,6 +10,7 @@ import { Grills } from 'components/Grills/Grills';
 import { Desserts } from 'components/Desserts/Desserts';
 import { Sides } from 'components/Sides/Sides';
 import { Drinks } from 'components/Drinks/Drinks';
+import './Gallery.css';
 
 export const Gallery = () => {
   const [products, setProducts] = useState([]);
@@ -29,6 +30,9 @@ export const Gallery = () => {
       />
       <SpecialBurgers
         products={products.filter(product => product.type === 'special')}
+      />
+      <ChickenBurgers
+        products={products.filter(product => product.type === 'chicken-burger')}
       />
       <Burgers
         products={products.filter(product => product.type === 'burger')}
