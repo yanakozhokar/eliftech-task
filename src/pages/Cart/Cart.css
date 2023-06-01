@@ -1,6 +1,29 @@
+.cart {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
 .cart__complete {
   display: flex;
   gap: 20px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 20px;
+}
+
+.cart__return-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  max-width: max-content;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #f44336;
+}
+
+.cart__return-btn:hover,
+.cart__return-btn:focus {
+  background-color: #df392d;
+  transition: all 0.4s;
 }
