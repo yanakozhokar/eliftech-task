@@ -1,5 +1,5 @@
-import { MenuForm } from 'components/MenuForm/MenuForm';
-import { Menu } from 'components/Menu/Menu';
+import { SidebarLeftMenuForm } from 'components/SidebarLeftMenuForm/SidebarLeftMenuForm';
+import { SidebarLeftMenu } from 'components/SidebarLeftMenu/SidebarLeftMenu';
 
 import './SidebarLeft.css';
 import { SpecialOffersLink } from 'components/SpecialOffersLink/SpecialOffersLink';
@@ -7,8 +7,8 @@ import { SpecialOffersLink } from 'components/SpecialOffersLink/SpecialOffersLin
 export const SidebarLeft = () => {
   return (
     <aside className="sidebar-left">
-      <MenuForm />
-      <Menu />
+      <SidebarLeftMenuForm />
+      <SidebarLeftMenu />
       <SpecialOffersLink />
     </aside>
   );

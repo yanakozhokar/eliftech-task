@@ -3,7 +3,7 @@ import { ProductsList } from 'components/ProductsList/ProductsList';
 
 export const Grills = ({ products }) => {
   return (
-    <section className="products">
+    <section className="products" id="grills">
       <ProductsTop title={'Grilles'} />
       <ProductsList products={products} />
     </section>

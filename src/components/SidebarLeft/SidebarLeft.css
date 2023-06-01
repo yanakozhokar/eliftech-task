@@ -1,7 +1,13 @@
 .sidebar-left {
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-shrink: 0;
   gap: 20px;
   width: 232px;
+}
+
+@media (min-width: 1200px) {
+  .sidebar-left {
+    display: flex;
+  }
 }
