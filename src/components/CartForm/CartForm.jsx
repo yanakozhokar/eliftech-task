@@ -1,8 +1,25 @@
+import { useDispatch } from 'react-redux';
+import { confirmOrder } from 'redux/orderSlice';
 import './CartForm.css';
 
 export const CartForm = () => {
+  const dispatch = useDispatch();
+
+  const onFormSubmit = event => {
+    event.preventDefault();
+    let formData = {};
+
+    Array.from(event.target.elements).forEach(el => {
+      if (el.nodeName === 'INPUT' || el.nodeName === 'TEXTAREA') {
+        formData = { ...formData, [el.name]: el.value };
+      }
+    });
+
+    dispatch(confirmOrder(formData));
+  };
+
   return (
-    <form className="cart__complete-form">
+    <form className="cart__complete-form" onSubmit={onFormSubmit}>
       <label className="cart__complete-form-label">
         Name:
         <input
