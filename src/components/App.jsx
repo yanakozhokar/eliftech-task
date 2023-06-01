@@ -5,7 +5,7 @@ import { Cart } from '../pages/Cart/Cart';
 
 export const App = () => {
   return (
-    <BrowserRouter basename="rest-burger">
+    <BrowserRouter basename="eliftech-task">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Order />} />
