@@ -1,13 +1,26 @@
 {
   "files": {
-    "main.css": "/eliftech-task/static/css/main.7acaea2f.css",
-    "main.js": "/eliftech-task/static/js/main.f6cdf716.js",
+    "main.css": "/eliftech-task/static/css/main.4f22992f.css",
+    "main.js": "/eliftech-task/static/js/main.c8c4f6d1.js",
+    "static/media/special-offer.png": "/eliftech-task/static/media/special-offer.a7e6082f1795f7c5e270.png",
+    "static/media/logo.png": "/eliftech-task/static/media/logo.4cd65162847bf817025a.png",
+    "static/media/chicken-burgers.svg": "/eliftech-task/static/media/chicken-burgers.5f0612a5288fa7431efd7858da7915d4.svg",
+    "static/media/special-burgers.svg": "/eliftech-task/static/media/special-burgers.68dc9067e91c62cd625289d7bcd1d24b.svg",
+    "static/media/sides.svg": "/eliftech-task/static/media/sides.492b57f09e2dcdd65e24e2a75ba530a2.svg",
+    "static/media/drinks.svg": "/eliftech-task/static/media/drinks.9a67f76f2c0d740bbabc5d8ab4880734.svg",
+    "static/media/wraps.svg": "/eliftech-task/static/media/wraps.7edd8cbaf839416dc450194ed8f2e2c5.svg",
+    "static/media/burgers.svg": "/eliftech-task/static/media/burgers.72b92c17f8a8fda7f3906a7c0a50a834.svg",
+    "static/media/sandwiches.svg": "/eliftech-task/static/media/sandwiches.93d1e1c7d5705ca736aba41972f3f4bd.svg",
+    "static/media/grills.svg": "/eliftech-task/static/media/grills.9a754b1df3f41adf52d31e11270d2eaa.svg",
+    "static/media/desserts.svg": "/eliftech-task/static/media/desserts.38acb8f65a4b74a9a14d60f30d9fa2ce.svg",
+    "static/media/bell.svg": "/eliftech-task/static/media/bell.7a8fb346dbf91e10d2b56b36f3055e5a.svg",
+    "static/media/fork-and-knife.svg": "/eliftech-task/static/media/fork-and-knife.03c09c2a4c09795c74fd201fcf86d972.svg",
     "index.html": "/eliftech-task/index.html",
-    "main.7acaea2f.css.map": "/eliftech-task/static/css/main.7acaea2f.css.map",
-    "main.f6cdf716.js.map": "/eliftech-task/static/js/main.f6cdf716.js.map"
+    "main.4f22992f.css.map": "/eliftech-task/static/css/main.4f22992f.css.map",
+    "main.c8c4f6d1.js.map": "/eliftech-task/static/js/main.c8c4f6d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.f6cdf716.js"
+    "static/css/main.4f22992f.css",
+    "static/js/main.c8c4f6d1.js"
   ]
 }
