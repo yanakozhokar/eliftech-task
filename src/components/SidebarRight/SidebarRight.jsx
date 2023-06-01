@@ -7,10 +7,7 @@ export const SidebarRight = () => {
   const order = useSelector(state => state.order);
 
   const totalPrice = () => {
-    return order.items.reduce(
-      (total, item) => total + Number.parseFloat(item.price),
-      0
-    );
+    return order.items.reduce((total, item) => total + item.price, 0);
   };
 
   return (
@@ -18,7 +15,7 @@ export const SidebarRight = () => {
       <div className="sidebar-right__order">
         <p className="sidebar-right__order-title">My order</p>
         <div className="sidebar-right__order-container">
-          {order.length === 0 && (
+          {order.items.length === 0 && (
             <div className="sidebar-right__empty-cart">
               <div className="sidebar-right__empty-cart-img-container">
                 <img
@@ -32,7 +29,7 @@ export const SidebarRight = () => {
               <p className="sidebar-right__empty-cart-text">Cart empty</p>
             </div>
           )}
-          {order.length !== 0 && (
+          {order.items.length !== 0 && (
             <div className="sidebar-right__full-cart">
               <p className="sidebar-right__full-cart-title">Total</p>
               <p className="sidebar-right__fukk-cart-price">${totalPrice()}</p>
@@ -42,10 +39,9 @@ export const SidebarRight = () => {
             to="/cart"
             className="sidebar-right__order-confirm"
             style={
-              order.length !== 0 && {
-                pointerEvents: 'all',
-                backgroundColor: '#4CAF50',
-              }
+              order.items.length !== 0
+                ? { pointerEvents: 'all', backgroundColor: '#4CAF50' }
+                : null
             }
           >
             Confirm order
