@@ -1,8 +1,44 @@
 .header-menu__list {
-  display: flex;
+  display: none;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .header-menu__list {
+    display: flex;
+  }
+}
+
+.header-menu__open-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  background-color: transparent;
+}
+
+@media (min-width: 1200px) {
+  .header-menu__open-btn {
+    display: none;
+  }
+}
+
+.header-menu__open-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.header__menu-open-text {
+  font-size: 20px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 

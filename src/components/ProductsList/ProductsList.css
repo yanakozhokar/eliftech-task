@@ -1,4 +1,10 @@
 .products__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 768px) {
+  .products__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
