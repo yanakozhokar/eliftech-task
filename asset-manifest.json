@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/eliftech-task/static/css/main.4f22992f.css",
-    "main.js": "/eliftech-task/static/js/main.c8c4f6d1.js",
+    "main.js": "/eliftech-task/static/js/main.93dea4d9.js",
     "static/media/special-offer.png": "/eliftech-task/static/media/special-offer.a7e6082f1795f7c5e270.png",
     "static/media/logo.png": "/eliftech-task/static/media/logo.4cd65162847bf817025a.png",
     "static/media/chicken-burgers.svg": "/eliftech-task/static/media/chicken-burgers.5f0612a5288fa7431efd7858da7915d4.svg",
@@ -17,10 +17,10 @@
     "static/media/fork-and-knife.svg": "/eliftech-task/static/media/fork-and-knife.03c09c2a4c09795c74fd201fcf86d972.svg",
     "index.html": "/eliftech-task/index.html",
     "main.4f22992f.css.map": "/eliftech-task/static/css/main.4f22992f.css.map",
-    "main.c8c4f6d1.js.map": "/eliftech-task/static/js/main.c8c4f6d1.js.map"
+    "main.93dea4d9.js.map": "/eliftech-task/static/js/main.93dea4d9.js.map"
   },
   "entrypoints": [
     "static/css/main.4f22992f.css",
-    "static/js/main.c8c4f6d1.js"
+    "static/js/main.93dea4d9.js"
   ]
 }
