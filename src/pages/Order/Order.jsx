@@ -1,7 +1,7 @@
 import { SidebarLeft } from 'components/SidebarLeft/SidebarLeft';
-import './Order.css';
 import { Gallery } from 'components/Gallery/Gallery';
 import { SidebarRight } from 'components/SidebarRight/SidebarRight';
+import './Order.css';
 
 export const Order = () => {
   return (
