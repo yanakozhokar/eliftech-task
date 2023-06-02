@@ -66,6 +66,10 @@
   text-transform: uppercase;
 }
 
+.mobile.container {
+  position: relative;
+}
+
 .top-menu__dropdown-menu {
   position: absolute;
   top: 100%;
