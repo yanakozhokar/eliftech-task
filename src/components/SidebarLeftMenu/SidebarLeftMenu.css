@@ -1,9 +1,9 @@
-.menu {
+.sidebar-left__menu {
   border-radius: 10px;
   background-color: #ffffff;
 }
 
-.menu__title {
+.sidebar-left__menu-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
   color: #222;
 }
 
-.menu__item-link {
+.sidebar-left__menu-item-link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -25,17 +25,17 @@
   color: #414551;
 }
 
-.menu__item-link:not(:last-child) {
+.sidebar-left__menu-item-link:not(:last-child) {
   border-bottom: 1px solid #f9f9f9;
 }
 
-.menu__item-link:hover,
-.menu__item-link:focus {
+.sidebar-left__menu-item-link:hover,
+.sidebar-left__menu-item-link:focus {
   cursor: pointer;
   color: #f30;
 }
 
-.menu__icon {
+.sidebar-left__menu-icon {
   width: 18px;
   height: 18px;
   fill: currentColor;

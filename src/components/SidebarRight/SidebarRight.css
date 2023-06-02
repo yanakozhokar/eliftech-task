@@ -1,9 +1,12 @@
 .sidebar-right {
+  position: sticky;
+  top: 70px;
   display: none;
   flex-direction: column;
   flex-shrink: 0;
   gap: 20px;
   width: 232px;
+  height: 100vh;
 }
 
 @media (min-width: 1200px) {
