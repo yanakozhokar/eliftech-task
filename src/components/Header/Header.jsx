@@ -1,5 +1,4 @@
 import { Logo } from 'components/Logo/Logo';
-import { HeaderMenu } from 'components/TopMenu/TopMenu';
 import './Header.css';
 
 export const Header = () => {
@@ -13,7 +12,6 @@ export const Header = () => {
           </a>
         </div>
       </div>
-      <div className="container"></div>
     </header>
   );
 };
