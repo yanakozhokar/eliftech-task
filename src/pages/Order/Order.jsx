@@ -5,10 +5,12 @@ import './Order.css';
 
 export const Order = () => {
   return (
-    <div className="order container">
-      <SidebarLeft />
-      <Gallery />
-      <SidebarRight />
+    <div className="order">
+      <div className="container">
+        <SidebarLeft />
+        <Gallery />
+        <SidebarRight />
+      </div>
     </div>
   );
 };
