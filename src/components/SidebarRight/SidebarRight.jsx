@@ -1,14 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { ImMinus, ImPlus } from 'react-icons/im';
 import { IoCloseSharp } from 'react-icons/io5';
+import { deleteOrder } from 'redux/orderSlice';
+import { AmountControls } from 'components/AmountControls/AmountControls';
 import { default as EmptyCart } from '../../images/empty-cart.png';
-import {
-  addOrderItem,
-  deleteOrderItem,
-  updateOrderItemAmount,
-} from 'redux/orderSlice';
 import './SidebarRight.css';
+
 
 export const SidebarRight = () => {
   const order = useSelector(state => state.order);
@@ -49,6 +46,7 @@ export const SidebarRight = () => {
                       <button
                         type="button"
                         className="sidebar-right__cart-item-close-btn"
+                        onClick={() => dispatch(deleteOrder(item))}
                       >
                         <IoCloseSharp className="sidebar-right_cart-item-close-icon" />
                       </button>
@@ -57,30 +55,7 @@ export const SidebarRight = () => {
                       <p className="sidebar-right__cart-item-total-price">
                         ${item.totalPrice}
                       </p>
-                      <div className="amount">
-                        <button
-                          type="button"
-                          className="amount-minus-btn"
-                          onClick={() => dispatch(deleteOrderItem(item))}
-                        >
-                          <ImMinus className="amount-icon" />
-                        </button>
-                        <input
-                          type="number"
-                          min={1}
-                          max={99}
-                          value={item.amount}
-                          className="amount-input"
-                          onChange={e => updateOrderItemAmount(e.target.value)}
-                        />
-                        <button
-                          type="button"
-                          className="amount-plus-btn"
-                          onClick={() => dispatch(addOrderItem(item))}
-                        >
-                          <ImPlus className="amount-icon" />
-                        </button>
-                      </div>
+                      <AmountControls item={item} />
                     </div>
                   </li>
                 ))}
