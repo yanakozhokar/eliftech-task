@@ -33,9 +33,9 @@ export const SidebarRight = () => {
           )}
           {order.items.length !== 0 && (
             <div className="sidebar-right__cart">
-              {order.items.map(item => (
-                <ul className="sidebar-right__cart-list">
-                  <li className="sidebar-right__cart-item">
+              <ul className="sidebar-right__cart-list">
+                {order.items.map(item => (
+                  <li className="sidebar-right__cart-item" key={item.id}>
                     <div className="sidebar-right__cart-item-title-container">
                       <p className="sidebar-right__cart-item-title">
                         {item.name}
@@ -68,8 +68,8 @@ export const SidebarRight = () => {
                       </div>
                     </div>
                   </li>
-                </ul>
-              ))}
+                ))}
+              </ul>
               <div className="sidebar-right__total">
                 <p className="sidebar-right__cart-total-title">Total</p>
                 <p className="sidebar-right__cart-total-price">

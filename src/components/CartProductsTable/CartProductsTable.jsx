@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { IoMdTrash } from 'react-icons/io';
-import { deleteOrderItem } from 'redux/orderSlice';
+import { deleteOrder } from 'redux/orderSlice';
 import './CartProductsTable.css';
 
 export const CartProductsTable = () => {
@@ -26,7 +26,7 @@ export const CartProductsTable = () => {
             <td className="cart__complete-table-body-item">
               <button
                 className="cart__complete-table-body-delete-btn"
-                onClick={() => dispatch(deleteOrderItem(item))}
+                onClick={() => dispatch(deleteOrder(item))}
               >
                 <IoMdTrash
                   width={18}

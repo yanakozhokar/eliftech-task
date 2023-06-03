@@ -19,6 +19,14 @@ export const orderSlice = createSlice({
     },
 
     deleteOrderItem: (state, action) => {
+      const existingItem = state.items.find(
+        item => item.name === action.payload.name
+      );
+      existingItem.amount -= 1;
+      existingItem.price -= action.payload.price;
+    },
+
+    deleteOrder: (state, action) => {
       return {
         ...state,
         items: state.items.filter(item => item.id !== action.payload.id),
@@ -37,7 +45,7 @@ export const orderSlice = createSlice({
   },
 });
 
-export const { addOrderItem, deleteOrderItem, confirmOrder } =
+export const { addOrderItem, deleteOrderItem, deleteOrder, confirmOrder } =
   orderSlice.actions;
 
 export default orderSlice.reducer;
