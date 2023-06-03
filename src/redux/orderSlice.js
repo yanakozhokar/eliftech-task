@@ -10,11 +10,27 @@ export const orderSlice = createSlice({
       );
 
       if (existingItem) {
+        if (existingItem.amount >= 99) {
+          return;
+        }
         existingItem.amount += 1;
-        existingItem.price += action.payload.price;
+        existingItem.totalPrice += action.payload.price;
       } else {
-        const newItem = { ...action.payload, amount: 1 };
+        const newItem = {
+          ...action.payload,
+          totalPrice: action.payload.price,
+          amount: 1,
+        };
         state.items.push(newItem);
+      }
+    },
+
+    updateOrderItemAmount: (state, action) => {
+      const { itemId, amount } = action.payload;
+      const item = state.items.find(item => item.id === itemId);
+      if (item) {
+        item.amount = amount;
+        item.totalPrice = item.price * amount;
       }
     },
 
@@ -22,8 +38,12 @@ export const orderSlice = createSlice({
       const existingItem = state.items.find(
         item => item.name === action.payload.name
       );
+
+      if (existingItem.amount <= 1) {
+        return;
+      }
       existingItem.amount -= 1;
-      existingItem.price -= action.payload.price;
+      existingItem.totalPrice -= action.payload.price;
     },
 
     deleteOrder: (state, action) => {
@@ -45,7 +65,12 @@ export const orderSlice = createSlice({
   },
 });
 
-export const { addOrderItem, deleteOrderItem, deleteOrder, confirmOrder } =
-  orderSlice.actions;
+export const {
+  addOrderItem,
+  updateOrderItemAmount,
+  deleteOrderItem,
+  deleteOrder,
+  confirmOrder,
+} = orderSlice.actions;
 
 export default orderSlice.reducer;
