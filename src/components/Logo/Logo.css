@@ -1,6 +1,15 @@
 .logo__container {
-  width: 224px;
-  height: 128px;
+  display: flex;
+  flex-shrink: 0;
+  width: 180px;
+  height: 102px;
+}
+
+@media (min-width: 480px) {
+  .logo__container {
+    width: 224px;
+    height: 128px;
+  }
 }
 
 .logo__img {

@@ -27,7 +27,7 @@
 .special-offer__card {
   position: relative;
   z-index: 1;
-  padding: 40px 30px 30px;
+  padding: 15px;
   border-radius: 10px;
   border: 5px solid #fff;
   max-width: 400px;
@@ -35,6 +35,12 @@
   color: #fff;
   background-image: url('../../images/special-offer.png');
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 480px) {
+  .special-offer__card {
+    padding: 40px 30px 30px;
+  }
 }
 
 .special-offer__card:hover {
@@ -60,32 +66,52 @@
 .special-offer__title {
   position: relative;
   z-index: 2;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   text-transform: capitalize;
+}
+
+@media (min-width: 480px) {
+  .special-offer__title {
+    font-size: 18px;
+  }
 }
 
 .special-offer__description {
   position: relative;
   z-index: 2;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
+}
+
+@media (min-width: 480px) {
+  .special-offer__description {
+    font-size: 15px;
+  }
 }
 
 .special-offer__btn {
   position: absolute;
-  bottom: -20px;
+  bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  padding: 15px 25px;
+  padding: 12px 20px;
   color: #fff;
   border: unset;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   text-transform: capitalize;
   background-color: #f44336;
+}
+
+@media (min-width: 480px) {
+  .special-offer__btn {
+    bottom: -20px;
+    padding: 15px 25px;
+    font-size: 16px;
+  }
 }
 
 .special-offer__card:hover .special-offer__btn {
@@ -98,7 +124,14 @@
   bottom: 10px;
   left: 10px;
   z-index: 2;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   fill: #ffffff;
+}
+
+@media (min-width: 480px) {
+  .special-offer__info-icon {
+    width: 20px;
+    height: 20px;
+  }
 }

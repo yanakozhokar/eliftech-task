@@ -2,14 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10px;
+  padding: 13px 9px;
   background-color: #f8f8f8;
 }
 
+@media (min-width: 480px) {
+  .products__top {
+    padding: 15px 10px;
+  }
+}
+
 .products__top-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #111;
+}
+
+@media (min-width: 480px) {
+  .products__top-title {
+    font-size: 16px;
+  }
 }
 
 .products__top-icon {

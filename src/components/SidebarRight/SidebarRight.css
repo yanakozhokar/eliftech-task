@@ -39,8 +39,15 @@
 }
 
 .sidebar-right__empty-cart-img-container {
-  width: 283px;
-  height: 176px;
+  width: 255px;
+  height: 158px;
+}
+
+@media (min-width: 480px) {
+  .sidebar-right__empty-cart-img-container {
+    width: 283px;
+    height: 176px;
+  }
 }
 
 @media (min-width: 1200px) {
