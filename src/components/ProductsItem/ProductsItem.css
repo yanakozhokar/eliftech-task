@@ -3,7 +3,13 @@
   flex-direction: column;
   height: 302px;
   padding: 10px;
+  border-radius: 10px;
   overflow: hidden;
+}
+
+.products__item:hover,
+.products__item:focus {
+  background-color: #f3f3f3;
 }
 
 .products__item-img-container {
@@ -74,10 +80,15 @@
   justify-content: center;
   align-items: center;
   padding: 14px 16px;
-  border: unset;
+  border: 1px solid #eee;
   border-radius: 5px;
   color: #444;
-  background-color: #f3f3f3;
+  background-color: #eee;
+}
+
+.products__item-btn-add:hover,
+.products__item-btn-add:focus {
+  background-color: #ffffff;
 }
 
 .products__item-icon {

@@ -1,16 +1,12 @@
 .header {
-  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #222222;
   box-shadow: rgba(23, 32, 38, 0.08) 0px 2px 8px 0px,
     rgba(23, 32, 38, 0.06) 0px 2px 4px 0px;
 }
 
-.header__top {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #222222;
-}
-
-.header__top > .container {
+.header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;

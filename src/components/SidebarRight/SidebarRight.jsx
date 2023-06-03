@@ -1,5 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { ImMinus, ImPlus } from 'react-icons/im';
+import { IoCloseSharp } from 'react-icons/io5';
 import EmptyCart from '../../images/empty-cart.png';
 import './SidebarRight.css';
 
@@ -30,9 +32,50 @@ export const SidebarRight = () => {
             </div>
           )}
           {order.items.length !== 0 && (
-            <div className="sidebar-right__full-cart">
-              <p className="sidebar-right__full-cart-title">Total</p>
-              <p className="sidebar-right__fukk-cart-price">${totalPrice()}</p>
+            <div className="sidebar-right__cart">
+              {order.items.map(item => (
+                <ul className="sidebar-right__cart-list">
+                  <li className="sidebar-right__cart-item">
+                    <div className="sidebar-right__cart-item-title-container">
+                      <p className="sidebar-right__cart-item-title">
+                        {item.name}
+                      </p>
+                      <button
+                        type="button"
+                        className="sidebar-right__cart-item-close-btn"
+                      >
+                        <IoCloseSharp className="sidebar-right_cart-item-close-icon" />
+                      </button>
+                    </div>
+                    <div className="sidebar-right__cart-item-total-container">
+                      <p className="sidebar-right__cart-item-total-price">
+                        ${item.price}
+                      </p>
+                      <div className="amount">
+                        <button type="button" className="amount-minus-btn">
+                          <ImMinus className="amount-icon" />
+                        </button>
+                        <input
+                          type="number"
+                          min={1}
+                          max={99}
+                          value={item.amount}
+                          className="amount-input"
+                        />
+                        <button type="button" className="amount-plus-btn">
+                          <ImPlus className="amount-icon" />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              ))}
+              <div className="sidebar-right__total">
+                <p className="sidebar-right__cart-total-title">Total</p>
+                <p className="sidebar-right__cart-total-price">
+                  ${totalPrice()}
+                </p>
+              </div>
             </div>
           )}
           <Link
