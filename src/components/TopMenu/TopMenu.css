@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  padding: 13px;
+  padding: 14px;
   border-top: transparent;
   border-bottom: transparent;
   border-left: 1px solid #ececec;
@@ -62,27 +62,14 @@
 }
 
 .top-menu__open-icon {
-  width: 20px;
-  height: 20px;
-}
-
-@media (min-width: 480px) {
-  .top-menu__open-icon {
-    width: 22px;
-    height: 22px;
-  }
+  width: 22px;
+  height: 22px;
 }
 
 .top__menu-open-text {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-}
-
-@media (min-width: 480px) {
-  .top__menu-open-text {
-    font-size: 16px;
-  }
 }
 
 .mobile.container {
