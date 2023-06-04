@@ -1,0 +1,27 @@
+.socials-list {
+  display: flex;
+  gap: 20px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #666;
+  background-color: #f2f2f2;
+}
+
+.socials__link:hover,
+.socials-link:focus {
+  color: #3d3d3d;
+  background-color: #f6f6f6;
+}
+
+.socials__icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
