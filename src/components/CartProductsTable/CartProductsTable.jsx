@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { IoMdTrash } from 'react-icons/io';
 import { deleteOrder } from 'redux/orderSlice';
 import './CartProductsTable.css';
+import { AmountControls } from 'components/AmountControls/AmountControls';
 
 export const CartProductsTable = () => {
   const order = useSelector(state => state.order);
@@ -21,8 +22,12 @@ export const CartProductsTable = () => {
         {order.items.map(item => (
           <tr className="cart__complete-table-body-row" key={item.id}>
             <td className="cart__complete-table-body-item">{item.name}</td>
-            <td className="cart__complete-table-body-item">{item.amount}</td>
-            <td className="cart__complete-table-body-item">{item.price}</td>
+            <td className="cart__complete-table-body-item">
+              <AmountControls item={item} />
+            </td>
+            <td className="cart__complete-table-body-item">
+              {item.totalPrice}
+            </td>
             <td className="cart__complete-table-body-item">
               <button
                 className="cart__complete-table-body-delete-btn"

@@ -53,6 +53,10 @@ export const orderSlice = createSlice({
       };
     },
 
+    deleteAllOrders: (state, action) => {
+      return { items: [] };
+    },
+
     confirmOrder: (state, action) => {
       fetch('https://64748ef77de100807b1b337b.mockapi.io/orders', {
         method: 'POST',
@@ -69,6 +73,7 @@ export const {
   addOrderItem,
   updateOrderItemAmount,
   deleteOrderItem,
+  deleteAllOrders,
   deleteOrder,
   confirmOrder,
 } = orderSlice.actions;

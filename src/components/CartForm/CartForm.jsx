@@ -1,9 +1,12 @@
 import { useDispatch } from 'react-redux';
-import { confirmOrder } from 'redux/orderSlice';
+import { useRef } from 'react';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { confirmOrder, deleteAllOrders } from 'redux/orderSlice';
 import './CartForm.css';
 
 export const CartForm = () => {
   const dispatch = useDispatch();
+  const formRef = useRef(null);
 
   const onFormSubmit = event => {
     event.preventDefault();
@@ -16,10 +19,16 @@ export const CartForm = () => {
     });
 
     dispatch(confirmOrder(formData));
+    dispatch(deleteAllOrders());
+    formRef.current.reset();
+    Notify.success('Your order has been successfully received!', {
+      position: 'right-bottom',
+      timeout: 5000,
+    });
   };
 
   return (
-    <form className="cart__complete-form" onSubmit={onFormSubmit}>
+    <form className="cart__complete-form" onSubmit={onFormSubmit} ref={formRef}>
       <label className="cart__complete-form-label">
         Name:
         <input
