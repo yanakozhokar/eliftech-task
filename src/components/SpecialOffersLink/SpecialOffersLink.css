@@ -8,7 +8,7 @@
   background-color: #ffffff;
 }
 
-.special-orders-icon-container {
+.special-offers-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
   fill: #ffffff;
 }
 
-.special-orders-text {
+.special-offers-text {
   margin-top: 15px;
   font-size: 18px;
   font-weight: 600;
