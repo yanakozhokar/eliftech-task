@@ -9,5 +9,5 @@
 .products {
   border-radius: 10px;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
 }

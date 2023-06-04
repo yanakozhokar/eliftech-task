@@ -1,6 +1,6 @@
 .sidebar-left__menu {
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
 }
 
 .sidebar-left__menu-title {
@@ -10,7 +10,7 @@
   padding: 14px 15px 10px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #222;
+  color: var(--sidebar-title);
 }
 
 .sidebar-left__menu-item-link {
@@ -22,17 +22,17 @@
   font-weight: 500;
   line-height: 1.6;
   text-transform: capitalize;
-  color: #414551;
+  color: var(--sidebar-menu-item-text);
 }
 
 .sidebar-left__menu-item-link:not(:last-child) {
-  border-bottom: 1px solid #f9f9f9;
+  border-bottom: 1px solid var(--sidebar-menu-item-border);
 }
 
 .sidebar-left__menu-item-link:hover,
 .sidebar-left__menu-item-link:focus {
   cursor: pointer;
-  color: #f30;
+  color: var(--sidebar-menu-item-hover-text);
 }
 
 .sidebar-left__menu-icon {

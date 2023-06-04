@@ -1,5 +1,62 @@
 @import-normalize;
 
+:root {
+  --amount-btn-bg: #9a9ca0;
+  --amount-btn-icon-fill: #ffffff;
+  --bg-primary: #ececec;
+  --bg-secondary: #ffffff;
+  --btn-icon-fill: #ffffff;
+  --btn-primary-bg: #4caf50;
+  --btn-secondary-bg: #8acb8d;
+  --btn-thirdly-bg: #f44336;
+  --btn-thirdly-bg-hover: #df392d;
+  --btn-text-primary: #ffffff;
+  --empty-cart-text: #c2c2c2;
+  --footer-bottom-copyright: #8c8c8c;
+  --footer-top-item: #101010;
+  --form-input-border: #e2e2e9;
+  --gallery-btn-add-bg: #eeeeee;
+  --gallery-btn-add-bg-hover: #ffffff;
+  --gallery-btn-add-fill: #444444;
+  --gallery-item-bg-hover: #f3f3f3;
+  --gallery-item-title: #25282b;
+  --gallery-item-description: #797979;
+  --gallery-price: #000000;
+  --gallery-products-top-arrow: #222222;
+  --gallery-products-top-bg: #f8f8f8;
+  --gallery-products-top-icon-fill: #5c5c5c;
+  --gallery-products-top-title: #111111;
+  --gallery-recommended-bg: #f44336;
+  --gallery-recommended-color: #ffffff;
+  --header-bg: #222222;
+  --header-tel: #ffffff;
+  --menu-form-icon-fill: #55595c;
+  --table-body-row-border: #e2e2e9;
+  --table-head-row-bg: #f8f8f8;
+  --top-menu-item-border: #ececec;
+  --top-menu-item-bg-hover: #f9f9f9;
+  --top-menu-dropdown-border: #eaebeb;
+  --sidebar-cart-list-border: #eaebeb;
+  --sidebar-cart-item-border: #e8e8e8;
+  --sidebar-cart-close-btn-fill: #4d4f56;
+  --sidebar-cart-total-title: #4d4f56;
+  --sidebar-cart-total-price: #25282b;
+  --sidebar-scroll: #aeb0b3;
+  --sidebar-title: #111111;
+  --sidebar-menu-item-text: #414551;
+  --sidebar-menu-item-hover-text: #ff3300;
+  --sidebar-menu-item-border: #f9f9f9;
+  --socials-item-bg: #f2f2f2;
+  --socials-item-bg-hover: #f6f6f6;
+  --socials-item-icon-fill: #666666;
+  --socials-item-icon-hover-fill: #3d3d3d;
+  --special-offer-banner-border: #ffffff;
+  --special-offer-banner-text: #ffffff;
+  --special-offer-info-icon-fill: #ffffff;
+  --special-offers-link-icon-bg: #f44336;
+  --special-offers-link-icon-fill: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,7 +67,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ececec;
+  background-color: var(--bg-primary);
 }
 
 code {

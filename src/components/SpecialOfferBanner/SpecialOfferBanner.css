@@ -29,10 +29,10 @@
   z-index: 1;
   padding: 15px;
   border-radius: 10px;
-  border: 5px solid #fff;
+  border: 5px solid var(--special-offer-banner-border);
   max-width: 400px;
   text-align: center;
-  color: #fff;
+  color: var(--special-offer-banner-text);
   background-image: url('../../images/special-offer.png');
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
@@ -97,13 +97,13 @@
   transform: translateX(-50%);
   z-index: 2;
   padding: 12px 20px;
-  color: #fff;
+  color: var(--btn-text-primary);
   border: unset;
   border-radius: 10px;
   font-size: 15px;
   font-weight: 400;
   text-transform: capitalize;
-  background-color: #f44336;
+  background-color: var(--btn-thirdly-bg);
 }
 
 @media (min-width: 480px) {
@@ -115,7 +115,7 @@
 }
 
 .special-offer__card:hover .special-offer__btn {
-  background-color: #df392d;
+  background-color: var(--btn-thirdly-bg-hover);
   transition: all 0.4s;
 }
 
@@ -126,7 +126,7 @@
   z-index: 2;
   width: 18px;
   height: 18px;
-  fill: #ffffff;
+  fill: var(--special-offer-info-icon-fill);
 }
 
 @media (min-width: 480px) {

@@ -3,7 +3,7 @@
   height: 20px;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid #9a9ca0;
+  border: 1px solid var(--amount-btn-bg);
 }
 
 .amount-minus-btn,
@@ -14,13 +14,13 @@
   width: 22px;
   height: 100%;
   border: unset;
-  background-color: #9a9ca0;
+  background-color: var(--amount-btn-bg);
 }
 
 .amount-icon {
   width: 50%;
   height: 50%;
-  fill: #ffffff;
+  fill: var(--amount-btn-icon-fill);
 }
 
 .amount-input {

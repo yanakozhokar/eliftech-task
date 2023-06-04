@@ -1,7 +1,7 @@
 .cart__complete-table {
   width: 100%;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
   overflow: hidden;
   border-collapse: collapse;
 }
@@ -13,11 +13,11 @@
 }
 
 .cart__complete-table-head-row {
-  background-color: #f8f8f8;
+  background-color: var(--table-head-row-bg);
 }
 
 .cart__complete-table-body-row {
-  border-bottom: 1px solid #e2e2e9;
+  border-bottom: 1px solid var(--table-body-row-border);
 }
 
 .cart__complete-table-head-title {

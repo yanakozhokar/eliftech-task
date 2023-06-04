@@ -3,11 +3,11 @@
   top: 0;
   max-height: max-content;
   z-index: 10;
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
 }
 
 .desktop {
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
 }
 
 .top-menu__list {
@@ -26,14 +26,14 @@
 
 .top-menu__item {
   padding: 14px 19px;
-  border-left: 1px solid #f9f9f9;
-  border-right: 1px solid #f9f9f9;
+  border-left: 1px solid var(--top-menu-item-border);
+  border-right: 1px solid var(--top-menu-item-border);
 }
 
 .top-menu__item:hover,
 .top-menu__item:focus {
   cursor: pointer;
-  background-color: #f9f9f9;
+  background-color: var(--top-menu-item-bg-hover);
 }
 
 .top-menu__open-btn {
@@ -44,8 +44,8 @@
   padding: 14px;
   border-top: transparent;
   border-bottom: transparent;
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
+  border-left: 1px solid var(--top-menu-item-border);
+  border-right: 1px solid var(--top-menu-item-border);
   background-color: transparent;
 }
 
@@ -80,8 +80,8 @@
   position: absolute;
   top: 100%;
   width: calc(100% - 48px);
-  border: 1px solid #eaebeb;
-  background-color: #ffffff;
+  border: 1px solid var(--top-menu-dropdown-border);
+  background-color: var(--bg-secondary);
   box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.6);
 }
 

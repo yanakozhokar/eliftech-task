@@ -5,7 +5,7 @@
   align-items: center;
   padding: 30px;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
 }
 
 .special-offers-icon-container {
@@ -15,13 +15,13 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #f44336;
+  background-color: var(--special-offers-link-icon-bg);
 }
 
 .special-offers-icon {
   width: 30px;
   height: 30px;
-  fill: #ffffff;
+  fill: var(--special-offers-link-icon-fill);
 }
 
 .special-offers-text {

@@ -18,12 +18,12 @@
   max-width: max-content;
   border-radius: 10px;
   font-size: 15px;
-  color: #ffffff;
-  background-color: #f44336;
+  color: var(--btn-text-primary);
+  background-color: var(--btn-thirdly-bg);
 }
 
 .cart__return-btn:hover,
 .cart__return-btn:focus {
-  background-color: #df392d;
+  background-color: var(--btn-thirdly-bg-hover);
   transition: all 0.4s;
 }

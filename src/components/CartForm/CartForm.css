@@ -6,7 +6,7 @@
   width: 414px;
   height: max-content;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
 }
 
 .cart__complete-form-label {
@@ -18,13 +18,13 @@
 
 .cart__complete-form-input {
   padding: 10px 15px;
-  border: 1px solid #e2e2e9;
+  border: 1px solid var(--form-input-border);
   border-radius: 8px;
 }
 
 .cart__complete-form-comment {
   padding: 10px 15px;
-  border: 1px solid #e2e2e9;
+  border: 1px solid var(--form-input-border);
   border-radius: 8px;
   height: 150px;
   resize: none;
@@ -43,6 +43,6 @@
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #4caf50;
+  color: var(--btn-text-primary);
+  background-color: var(--btn-primary-bg);
 }

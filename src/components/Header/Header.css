@@ -1,7 +1,7 @@
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #222222;
+  background-color: var(--header-bg);
   box-shadow: rgba(23, 32, 38, 0.08) 0px 2px 8px 0px,
     rgba(23, 32, 38, 0.06) 0px 2px 4px 0px;
 }
@@ -14,7 +14,7 @@
 
 .header__tel {
   display: none;
-  color: #ffffff;
+  color: var(--header-tel);
 }
 
 @media (min-width: 480px) {
