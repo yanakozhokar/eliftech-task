@@ -188,6 +188,6 @@
   text-align: center;
   text-transform: capitalize;
   color: var(--btn-text-primary);
-  background-color: var(--btn-secondary-bg);
+  background-color: var(--btn-primary-bg-disabled);
   pointer-events: none;
 }

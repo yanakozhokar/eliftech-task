@@ -1,12 +1,11 @@
 import { IoClose } from 'react-icons/io5';
 import { Modal } from 'components/Modal/Modal';
-import './ModalServiceHours.css';
 
 export const ModalServiceHours = ({ toggleServiceHoursModal }) => {
   return (
     <Modal>
       <div className="modal__top">
-        <h2 className="modal__top-title">Service houre</h2>
+        <h2 className="modal__top-title">Service houres</h2>
         <button
           type="button"
           className="modal__top-close-btn"
@@ -16,7 +15,7 @@ export const ModalServiceHours = ({ toggleServiceHoursModal }) => {
         </button>
       </div>
       <div className="modal__main">
-        <h3 className="modal__main-title">Rest burger</h3>
+        <p className="modal__main-title">Rest burger</p>
         <p className="modal__main-subtitle">Service hours</p>
         <table className="modal__table">
           <thead className="modal__table-head">
@@ -28,7 +27,7 @@ export const ModalServiceHours = ({ toggleServiceHoursModal }) => {
           </thead>
           <tbody className="modal__table-body">
             <tr className="modal__table-body-row">
-              <td className="modal__table-body-item" colspan={3}>
+              <td className="modal__table-body-item" colSpan={3}>
                 Restaurant is open 7 days 24 hours.
               </td>
             </tr>

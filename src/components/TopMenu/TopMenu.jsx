@@ -54,9 +54,21 @@ export const TopMenu = () => {
         {isMenuDropdowOpen && (
           <div className="mobile container">
             <ul className="top-menu__dropdown-menu">
-              <li className="top-menu__dropdown-menu-item">Menu</li>
-              <li className="top-menu__dropdown-menu-item">Payment methods</li>
-              <li className="top-menu__dropdown-menu-item">Service hours</li>
+              <li className="top-menu__dropdown-menu-item">
+                <Link to="/">Menu</Link>
+              </li>
+              <li
+                className="top-menu__dropdown-menu-item"
+                onClick={togglePaymentModal}
+              >
+                Payment methods
+              </li>
+              <li
+                className="top-menu__dropdown-menu-item"
+                onClick={toggleServiceHoursModal}
+              >
+                Service hours
+              </li>
               <li className="top-menu__dropdown-menu-item">Reservation</li>
               <li className="top-menu__dropdown-menu-item">Feedback</li>
               <li className="top-menu__dropdown-menu-item">Contact</li>

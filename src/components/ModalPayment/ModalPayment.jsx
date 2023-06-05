@@ -16,7 +16,7 @@ export const ModalPayment = ({ togglePaymentModal }) => {
         </button>
       </div>
       <div className="modal__main">
-        <h3 className="modal__main-title">Rest burger</h3>
+        <p className="modal__main-title">Rest burger</p>
         <p className="modal__main-subtitle">Payment methods</p>
         <ul className="modal__main-payment-list">
           <li className="modal__main-payment-item">Online payment</li>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Socials } from 'components/Socials/Socials';
 import PaymentMethods from '../../images/payment.png';
 import './Footer.css';
@@ -21,7 +22,9 @@ export const Footer = () => {
             <p className="footer__top-title">Rest burger</p>
             <ul className="footer__top-list">
               <li className="footer__top-item">Delivery zones</li>
-              <li className="footer__top-item">Special offers</li>
+              <li className="footer__top-item">
+                <Link to="/offers">Special offers</Link>
+              </li>
             </ul>
           </div>
           <div className="footer__top-documents">

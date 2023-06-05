@@ -1,9 +1,9 @@
-.order {
+.order-page {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.order > .container {
+.order-page > .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: 1200px) {
-  .order > .container {
+  .order-page > .container {
     flex-direction: row;
     gap: 20px;
   }

@@ -9,7 +9,7 @@ export const Order = () => {
   const order = useSelector(state => state.order);
 
   return (
-    <div className="order">
+    <div className="order-page">
       <div className="container">
         <SidebarLeft />
         <Gallery />

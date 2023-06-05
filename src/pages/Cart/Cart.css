@@ -1,29 +1,14 @@
-.cart {
+.cart-page {
   padding-top: 15px;
   padding-bottom: 20px;
 }
 
 .cart__complete {
-  display: flex;
-  gap: 20px;
   padding-top: 15px;
   padding-bottom: 20px;
 }
 
-.cart__return-btn {
+.cart__complete > .container {
   display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 4px 12px;
-  max-width: max-content;
-  border-radius: 10px;
-  font-size: 15px;
-  color: var(--btn-text-primary);
-  background-color: var(--btn-thirdly-bg);
-}
-
-.cart__return-btn:hover,
-.cart__return-btn:focus {
-  background-color: var(--btn-thirdly-bg-hover);
-  transition: all 0.4s;
+  gap: 20px;
 }
