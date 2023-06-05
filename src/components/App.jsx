@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { Order } from '../pages/Order/Order';
 import { Cart } from '../pages/Cart/Cart';
+import { Offers } from 'pages/Offers/Offers';
 
 export const App = () => {
   return (
