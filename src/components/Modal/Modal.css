@@ -151,10 +151,14 @@
   margin-top: 30px;
 }
 
-.modal__document-paragraph-title {
-  display: inline-block;
+.modal__document-paragraph-item-primary {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.modal__document-paragraph-item-primary * {
+  font-weight: 400;
+  text-transform: initial;
 }
 
 .modal__document-paragraph-item-secondary,

@@ -26,9 +26,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
         </p>
         <ol className="modal__document-paragraph-list-primary">
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">
-              How restaurant collect your information
-            </p>
+            How restaurant collect your information
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 Restaurant collect your personal information when you interact
@@ -69,9 +67,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">
-              Information that we collect from you
-            </p>
+            Information that we collect from you
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 As part of Restaurant’s commitment to the privacy of
@@ -123,9 +119,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">
-              Use of your information
-            </p>
+            Use of your information
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 We will only process the data we collect about you if there is a
@@ -224,9 +218,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">
-              How restaurant collect your information
-            </p>
+            How restaurant collect your information
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 Restaurant’s Platform may use “cookies.” You can set your
@@ -356,7 +348,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">Direct marketing</p>
+            Direct marketing
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 Where you have given your consent or where we have a justifiable
@@ -381,9 +373,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">
-              Automated decision making
-            </p>
+            Automated decision making
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 We conduct fraud checks on all customers. Where we believe we
@@ -410,9 +400,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">
-              Retention of your information
-            </p>
+            Retention of your information
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 We will not retain your information for any longer than we think
@@ -456,9 +444,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">
-              Disclosuare of your information
-            </p>
+            Disclosuare of your information
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 The information we collect about you will be transferred to and
@@ -583,7 +569,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">Security</p>
+            Security
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 We adopt robust technologies and policies to ensure the personal
@@ -612,7 +598,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">Your rights</p>
+            Your rights
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 Under data protection law, you may have a number of rights
@@ -686,9 +672,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">
-              Changes to our privacy policy
-            </p>
+            Changes to our privacy policy
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 Any changes to Restaurant’s privacy policy will be posted to the
@@ -699,7 +683,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
           <li className="modal__document-paragraph-item-primary">
-            <p className="modal__document-paragraph-title">Contact us</p>
+            Contact us
             <ol className="modal__document-paragraph-list-secondary">
               <li className="modal__document-paragraph-item-secondary">
                 Any questions regarding this Privacy Policy should be directed
