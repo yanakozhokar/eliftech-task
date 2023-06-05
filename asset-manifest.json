@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/eliftech-task/static/css/main.7478616a.css",
-    "main.js": "/eliftech-task/static/js/main.65342247.js",
+    "main.css": "/eliftech-task/static/css/main.a3d960e6.css",
+    "main.js": "/eliftech-task/static/js/main.77d141f5.js",
     "static/media/special-offer.png": "/eliftech-task/static/media/special-offer.a7e6082f1795f7c5e270.png",
     "static/media/logo.png": "/eliftech-task/static/media/logo.4cd65162847bf817025a.png",
     "static/media/payment.png": "/eliftech-task/static/media/payment.b3479e912e1eba3edcd3.png",
@@ -17,11 +17,11 @@
     "static/media/bell.svg": "/eliftech-task/static/media/bell.7a8fb346dbf91e10d2b56b36f3055e5a.svg",
     "index.html": "/eliftech-task/index.html",
     "static/media/fork-and-knife.svg": "/eliftech-task/static/media/fork-and-knife.03c09c2a4c09795c74fd201fcf86d972.svg",
-    "main.7478616a.css.map": "/eliftech-task/static/css/main.7478616a.css.map",
-    "main.65342247.js.map": "/eliftech-task/static/js/main.65342247.js.map"
+    "main.a3d960e6.css.map": "/eliftech-task/static/css/main.a3d960e6.css.map",
+    "main.77d141f5.js.map": "/eliftech-task/static/js/main.77d141f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.7478616a.css",
-    "static/js/main.65342247.js"
+    "static/css/main.a3d960e6.css",
+    "static/js/main.77d141f5.js"
   ]
 }
