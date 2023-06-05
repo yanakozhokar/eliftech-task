@@ -1,9 +1,17 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Socials } from 'components/Socials/Socials';
+import { ModalPrivacyPolicy } from 'components/ModalPrivacyPolicy/ModalPrivacyPolicy';
 import PaymentMethods from '../../images/payment.png';
 import './Footer.css';
 
 export const Footer = () => {
+  const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
+
+  const togglePrivacyPolicy = () => {
+    return setIsPrivacyPolicyOpen(prevState => !prevState);
+  };
+
   return (
     <footer className="footer">
       <div className="container">
@@ -30,7 +38,9 @@ export const Footer = () => {
           <div className="footer__top-documents">
             <p className="footer__top-title">Documents</p>
             <ul className="footer__top-list">
-              <li className="footer__top-item">Privacy policy</li>
+              <li className="footer__top-item" onClick={togglePrivacyPolicy}>
+                Privacy policy
+              </li>
               <li className="footer__top-item">Terms of use</li>
               <li className="footer__top-item">Refund policy</li>
             </ul>
@@ -43,6 +53,9 @@ export const Footer = () => {
           </p>
         </address>
       </div>
+      {isPrivacyPolicyOpen && (
+        <ModalPrivacyPolicy togglePrivacyPolicy={togglePrivacyPolicy} />
+      )}
     </footer>
   );
 };

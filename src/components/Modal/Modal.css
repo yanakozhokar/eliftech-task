@@ -1,8 +1,9 @@
 .modal__backdrop {
   position: fixed;
-  inset: 0;
-  background-color: var(--modal-backdrop);
   z-index: 100;
+  inset: 0;
+  padding: 10px;
+  background-color: var(--modal-backdrop);
 }
 
 .modal__window {
@@ -10,9 +11,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 310px;
+  min-width: 300px;
+  max-height: 90vh;
   border-radius: 10px;
-  text-transform: capitalize;
+  overflow-y: auto;
   background-color: var(--modal-bg);
   transform: translate(-50% -50%), scale(1);
   transition: transform 1000ms linear;
@@ -30,6 +32,10 @@
 }
 
 .modal__top {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
@@ -114,6 +120,53 @@
 
 .modal__table-head-item:not(:last-child) {
   border-right: 1px solid var(--modal-table-border);
+}
+
+.modal__document {
+  padding: 30px 15px;
+  color: var(--modal-document-text);
+}
+
+.modal__document ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+.modal__document ol > li:before {
+  counter-increment: li;
+  content: counters(li, '.') '. ';
+  font-weight: 700;
+}
+
+.modal__document-paragraph-list-thirdly {
+  list-style: initial;
+  list-style-position: inside;
+}
+
+.modal__document-paragraph-item-thirdly {
+  margin-left: 5px;
+}
+
+.modal__document-paragraph-item-primary {
+  margin-top: 30px;
+}
+
+.modal__document-paragraph-title {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal__document-paragraph-item-secondary,
+.modal__document-paragraph-item-thirdly {
+  margin-top: 15px;
+}
+
+.modal__document-description-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .modal__back-container {
