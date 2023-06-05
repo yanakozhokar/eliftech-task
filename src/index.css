@@ -31,6 +31,18 @@
   --header-bg: #222222;
   --header-tel: #ffffff;
   --menu-form-icon-fill: #55595c;
+  --modal-back-container-border: #e5e5e5;
+  --modal-back-btn-bg: #bfbfbf;
+  --modal-back-btn-text: #ffffff;
+  --modal-backdrop: rgba(0, 0, 0, 0.4);
+  --modal-bg: #ffffff;
+  --modal-payment-item-color: #4d4f56;
+  --modal-payment-item-bg: #f8f8f8;
+  --modal-main-title: #25282b;
+  --modal-main-subtitle: #4d4f56;
+  --modal-top-bg: #f2f2f2;
+  --modal-top-title: #111111;
+  --modal-top-close-btn: #111111;
   --table-body-row-border: #e2e2e9;
   --table-head-row-bg: #f8f8f8;
   --top-menu-item-border: #ececec;

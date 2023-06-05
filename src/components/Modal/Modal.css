@@ -1,0 +1,127 @@
+.modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: var(--modal-backdrop);
+  z-index: 100;
+}
+
+.modal__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 310px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  background-color: var(--modal-bg);
+  transform: translate(-50% -50%), scale(1);
+  transition: transform 1000ms linear;
+}
+
+@media screen and (min-width: 480px) {
+  .modal__window {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__window {
+    min-width: 528px;
+  }
+}
+
+.modal__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-color: var(--modal-top-bg);
+}
+
+.modal__top-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 2;
+
+  color: var(--modal-top-title);
+}
+
+.modal__top-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0 5px 5px;
+  border: unset;
+  background-color: transparent;
+}
+
+.modal__top-close-icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--modal-top-close-btn);
+}
+
+.modal__main {
+  padding: 30px 15px 45px;
+}
+
+.modal__main-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--modal-main-title);
+}
+
+.modal__main-subtitle {
+  margin-top: 8px;
+  text-align: center;
+  color: var(--modal-main-subtitle);
+}
+
+.modal__table {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  color: #4d4f56;
+  border: 1px solid #eceeef;
+  border-collapse: collapse;
+}
+
+.modal__table-head {
+  font-weight: 700;
+  border-bottom: 2px solid #eceeef;
+  background-color: #f8f8f8;
+}
+
+.modal__table-head-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.modal__table-head-item,
+.modal__table-body-item {
+  padding: 12px;
+}
+
+.modal__table-head-item:not(:last-child) {
+  border-right: 1px solid #eceeef;
+}
+
+.modal__back-container {
+  padding: 15px;
+  border-top: 1px solid var(--modal-back-container-border);
+}
+
+.modal__back-btn {
+  display: block;
+  margin-left: auto;
+  padding: 8px 16px;
+  border: unset;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--modal-back-btn-text);
+  background-color: var(--modal-back-btn-bg);
+}

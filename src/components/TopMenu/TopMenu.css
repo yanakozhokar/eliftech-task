@@ -27,6 +27,9 @@
 .top-menu__item {
   padding: 14px 19px;
   border-left: 1px solid var(--top-menu-item-border);
+}
+
+.top-menu__item:last-child {
   border-right: 1px solid var(--top-menu-item-border);
 }
 
