@@ -13,6 +13,7 @@
 @media (min-width: 768px) {
   .cart__complete-form {
     width: 414px;
+    order: unset;
   }
 }
 

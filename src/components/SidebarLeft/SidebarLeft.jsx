@@ -4,10 +4,10 @@ import { SidebarLeftMenu } from 'components/SidebarLeftMenu/SidebarLeftMenu';
 import './SidebarLeft.css';
 import { SpecialOffersLink } from 'components/SpecialOffersLink/SpecialOffersLink';
 
-export const SidebarLeft = () => {
+export const SidebarLeft = ({ onFilterChange }) => {
   return (
     <aside className="sidebar-left">
-      <SidebarLeftMenuForm />
+      <SidebarLeftMenuForm onFilterChange={onFilterChange} />
       <SidebarLeftMenu />
       <SpecialOffersLink />
     </aside>

@@ -10,9 +10,10 @@ import { Grills } from 'components/Grills/Grills';
 import { Desserts } from 'components/Desserts/Desserts';
 import { Sides } from 'components/Sides/Sides';
 import { Drinks } from 'components/Drinks/Drinks';
+import { FilteredProducts } from 'components/FilteredProducts/FilteredProducts';
 import './Gallery.css';
 
-export const Gallery = () => {
+export const Gallery = ({ filter }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -25,28 +26,54 @@ export const Gallery = () => {
   return (
     <div className="gallery">
       <SpecialOfferBanner />
-      <FeaturedProducts
-        products={products.filter(product => product.type === 'featured')}
-      />
-      <SpecialBurgers
-        products={products.filter(product => product.type === 'special')}
-      />
-      <ChickenBurgers
-        products={products.filter(product => product.type === 'chicken-burger')}
-      />
-      <Burgers
-        products={products.filter(product => product.type === 'burger')}
-      />
-      <Sandwiches
-        products={products.filter(product => product.type === 'sandwich')}
-      />
-      <Wraps products={products.filter(product => product.type === 'wrap')} />
-      <Grills products={products.filter(product => product.type === 'grill')} />
-      <Desserts
-        products={products.filter(product => product.type === 'dessert')}
-      />
-      <Sides products={products.filter(product => product.type === 'side')} />
-      <Drinks products={products.filter(product => product.type === 'drink')} />
+      {filter === '' && (
+        <>
+          <FeaturedProducts
+            products={products.filter(product => product.type === 'featured')}
+          />
+          <SpecialBurgers
+            products={products.filter(product => product.type === 'special')}
+          />
+          <ChickenBurgers
+            products={products.filter(
+              product => product.type === 'chicken-burger'
+            )}
+          />
+          <Burgers
+            products={products.filter(product => product.type === 'burger')}
+          />
+          <Sandwiches
+            products={products.filter(product => product.type === 'sandwich')}
+          />
+          <Wraps
+            products={products.filter(product => product.type === 'wrap')}
+          />
+          <Grills
+            products={products.filter(product => product.type === 'grill')}
+          />
+          <Desserts
+            products={products.filter(product => product.type === 'dessert')}
+          />
+          <Sides
+            products={products.filter(product => product.type === 'side')}
+          />
+          <Drinks
+            products={products.filter(product => product.type === 'drink')}
+          />
+        </>
+      )}
+      {filter !== '' && (
+        <FilteredProducts
+          products={products.filter(
+            product =>
+              product.type !== 'featured' &&
+              product.name
+                .toLowerCase()
+                .trim()
+                .includes(filter.toLowerCase().trim())
+          )}
+        />
+      )}
     </div>
   );
 };

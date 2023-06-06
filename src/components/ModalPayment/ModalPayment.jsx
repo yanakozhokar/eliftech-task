@@ -25,15 +25,15 @@ export const ModalPayment = ({ togglePaymentModal }) => {
             Credit/debit card at delivery
           </li>
         </ul>
-      </div>
-      <div className="modal__back-container">
-        <button
-          type="button"
-          className="modal__back-btn"
-          onClick={togglePaymentModal}
-        >
-          Back
-        </button>
+        <div className="modal__back-container">
+          <button
+            type="button"
+            className="modal__back-btn"
+            onClick={togglePaymentModal}
+          >
+            Back
+          </button>
+        </div>
       </div>
     </Modal>
   );

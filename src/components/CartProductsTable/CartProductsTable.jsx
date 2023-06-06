@@ -26,7 +26,7 @@ export const CartProductsTable = () => {
               <AmountControls item={item} />
             </td>
             <td className="cart__complete-table-body-item">
-              {item.totalPrice}
+              ${item.totalPrice}
             </td>
             <td className="cart__complete-table-body-item">
               <button

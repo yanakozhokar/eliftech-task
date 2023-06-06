@@ -15,6 +15,7 @@
 .products__top-title {
   font-size: 15px;
   font-weight: 600;
+  text-transform: capitalize;
   color: var(--gallery-products-top-title);
 }
 

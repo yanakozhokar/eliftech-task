@@ -20,12 +20,14 @@ export const TopMenu = () => {
     setIsPaymentModalOpen(prevState => {
       return !prevState;
     });
+    setIsMenuDropdownOpen(false);
   };
 
   const toggleServiceHoursModal = () => {
     setIsServiceHoursOpen(prevState => {
       return !prevState;
     });
+    setIsMenuDropdownOpen(false);
   };
 
   return (
@@ -45,9 +47,6 @@ export const TopMenu = () => {
             <li className="top-menu__item" onClick={toggleServiceHoursModal}>
               Service hours
             </li>
-            <li className="top-menu__item">Reservation</li>
-            <li className="top-menu__item">Feedback</li>
-            <li className="top-menu__item">Contact</li>
           </ul>
           <button className="top-menu__open-btn" onClick={toggleMenuDropdown}>
             <FiMenu className="top-menu__open-icon" />
@@ -57,7 +56,10 @@ export const TopMenu = () => {
         {isMenuDropdowOpen && (
           <div className="mobile container">
             <ul className="top-menu__dropdown-menu">
-              <li className="top-menu__dropdown-menu-item">
+              <li
+                className="top-menu__dropdown-menu-item"
+                onClick={toggleMenuDropdown}
+              >
                 <Link to="/">Menu</Link>
               </li>
               <li
@@ -68,13 +70,16 @@ export const TopMenu = () => {
               </li>
               <li
                 className="top-menu__dropdown-menu-item"
+                onClick={toggleMenuDropdown}
+              >
+                <Link to="/delivery">Delivery zones</Link>
+              </li>
+              <li
+                className="top-menu__dropdown-menu-item"
                 onClick={toggleServiceHoursModal}
               >
                 Service hours
               </li>
-              <li className="top-menu__dropdown-menu-item">Reservation</li>
-              <li className="top-menu__dropdown-menu-item">Feedback</li>
-              <li className="top-menu__dropdown-menu-item">Contact</li>
             </ul>
           </div>
         )}
