@@ -1,9 +1,15 @@
 .amount {
   display: flex;
-  height: 20px;
+  height: 19px;
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--amount-btn-bg);
+}
+
+@media (min-width: 768px) {
+  .amount {
+    height: 20px;
+  }
 }
 
 .amount-minus-btn,
@@ -11,10 +17,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 22px;
+  width: 20px;
   height: 100%;
   border: unset;
   background-color: var(--amount-btn-bg);
+}
+
+@media (min-width: 768px) {
+  .amount-minus-btn,
+  .amount-plus-btn {
+    width: 22px;
+  }
 }
 
 .amount-icon {
@@ -24,10 +37,16 @@
 }
 
 .amount-input {
-  width: 30px;
+  width: 25px;
   height: 100%;
   text-align: center;
   border: unset;
+}
+
+@media (min-width: 768px) {
+  .amount-input {
+    width: 30px;
+  }
 }
 
 .amount-input[type='number']::-webkit-inner-spin-button,

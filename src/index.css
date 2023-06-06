@@ -1,6 +1,7 @@
 @import-normalize;
 
 :root {
+  --accent-color: #f44336;
   --amount-btn-bg: #9a9ca0;
   --amount-btn-icon-fill: #ffffff;
   --bg-primary: #ececec;

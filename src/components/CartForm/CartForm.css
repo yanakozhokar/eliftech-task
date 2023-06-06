@@ -3,23 +3,42 @@
   flex-direction: column;
   gap: 8px;
   padding: 10px 15px;
-  width: 414px;
+  width: 100%;
   height: max-content;
   border-radius: 10px;
   background-color: var(--bg-secondary);
+  order: 2;
+}
+
+@media (min-width: 768px) {
+  .cart__complete-form {
+    width: 414px;
+  }
 }
 
 .cart__complete-form-label {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  font-size: 15px;
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .cart__complete-form-label {
+    font-size: 16px;
+  }
 }
 
 .cart__complete-form-input {
   padding: 10px 15px;
   border: 1px solid var(--form-input-border);
   border-radius: 8px;
+}
+
+.cart__complete-form-input:focus,
+.cart__complete-form-comment:focus {
+  outline-color: var(--accent-color);
 }
 
 .cart__complete-form-comment {

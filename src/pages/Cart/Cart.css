@@ -10,5 +10,12 @@
 
 .cart__complete > .container {
   display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .cart__complete > .container {
+    flex-direction: row;
+  }
 }
