@@ -1,0 +1,108 @@
+.delivery-page {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.delivery {
+  padding-top: 15px;
+}
+
+.delivery__top {
+  padding: 15px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid var(--section-top-border);
+  background-color: var(--bg-thirdly);
+}
+
+.delivery__top-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--section-top-title);
+}
+
+.delivery__main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 15px;
+  background-color: var(--bg-secondary);
+}
+
+@media (min-width: 768px) {
+  .delivery__main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.delivery__map {
+  width: 100%;
+  height: 320px;
+  border: unset;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+  -o-filter: grayscale(50%);
+}
+
+@media (min-width: 768px) {
+  .delivery__map {
+    height: 450px;
+  }
+}
+
+.delivery__zones {
+  padding: 10px;
+  width: 100%;
+  background-color: var(--delively-main-bg);
+}
+
+.delivery__table {
+  width: 100%;
+}
+
+.delivery__table-head-item {
+  padding: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--delivery-table-head-text);
+  background-color: var(--delivery-table-head-bg);
+}
+
+@media (min-width: 768px) {
+  .delivery__table-head-item {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .delivery__table-head-item:first-child {
+    text-align: initial;
+  }
+}
+
+.delivery__table-body-item {
+  padding: 8px;
+  text-align: center;
+  color: var(--delivery-table-body-text);
+  background-color: var(--delivery-table-body-bg);
+}
+
+@media (min-width: 768px) {
+  .delivery__table-body-item {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .delivery__table-body-item:first-child {
+    text-align: initial;
+  }
+}
+
+.delivery__table-head-item + .delivery__table-head-item,
+.delivery__table-body-item + .delivery__table-body-item {
+  border-right: 1px solid var(--delivery-table-border);
+}

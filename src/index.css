@@ -14,6 +14,12 @@
   --btn-thirdly-bg: #f44336;
   --btn-thirdly-bg-hover: #df392d;
   --btn-text-primary: #ffffff;
+  --delively-main-bg: #f6f6f6;
+  --delivery-table-border: #eceeef;
+  --delivery-table-body-bg: #ffffff;
+  --delivery-table-body-text: #333333;
+  --delivery-table-head-bg: #e9e9e9;
+  --delivery-table-head-text: #4d4f56;
   --empty-cart-text: #c2c2c2;
   --footer-bottom-copyright: #8c8c8c;
   --footer-top-item: #101010;
@@ -57,6 +63,8 @@
   --top-menu-item-border: #ececec;
   --top-menu-item-bg-hover: #f9f9f9;
   --top-menu-dropdown-border: #eaebeb;
+  --section-top-border: #dddddd;
+  --section-top-title: #111111;
   --sidebar-cart-list-border: #eaebeb;
   --sidebar-cart-item-border: #e8e8e8;
   --sidebar-cart-close-btn-fill: #4d4f56;

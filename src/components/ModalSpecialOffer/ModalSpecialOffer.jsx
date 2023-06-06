@@ -24,15 +24,15 @@ export const ModalSpecialOffer = ({
         <p className="modal__main-subtitle">{subtitle}</p>
         <p className="modal__main-terms">Terms</p>
         <p className="modal__main-subtitle">{terms}</p>
-      </div>
-      <div className="modal__back-container">
-        <button
-          type="button"
-          className="modal__back-btn"
-          onClick={toggleSpecialOfferModal}
-        >
-          Back
-        </button>
+        <div className="modal__back-container">
+          <button
+            type="button"
+            className="modal__back-btn"
+            onClick={toggleSpecialOfferModal}
+          >
+            Back
+          </button>
+        </div>
       </div>
     </Modal>
   );

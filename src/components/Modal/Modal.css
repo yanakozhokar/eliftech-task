@@ -12,9 +12,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 300px;
+  max-width: 600px;
   max-height: 90vh;
   border-radius: 10px;
-  overflow-y: auto;
+  overflow: hidden;
   background-color: var(--modal-bg);
   transform: translate(-50% -50%), scale(1);
   transition: transform 1000ms linear;
@@ -48,6 +49,7 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 2;
+  text-transform: capitalize;
   color: var(--modal-top-title);
 }
 
@@ -123,8 +125,34 @@
 }
 
 .modal__document {
-  padding: 30px 15px;
+  padding: 30px 15px 15px 15px;
   color: var(--modal-document-text);
+  overflow-y: auto;
+  max-height: calc(90vh - 60px);
+}
+
+.modal__main {
+  padding: 30px 15px 15px 15px;
+  color: var(--modal-document-text);
+  overflow-y: auto;
+  max-height: calc(90vh - 60px);
+}
+
+.modal__main::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal__main::-webkit-scrollbar-thumb {
+  background-color: var(--sidebar-scroll);
+  border-radius: 3px;
+}
+
+.modal__main::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.modal__document-text + .modal__document-text {
+  margin-top: 20px;
 }
 
 .modal__document ol {
@@ -173,8 +201,13 @@
   gap: 15px;
 }
 
+.modal__address {
+  margin-top: 20px;
+}
+
 .modal__back-container {
-  padding: 15px;
+  margin-top: 20px;
+  padding-top: 15px;
   border-top: 1px solid var(--modal-back-container-border);
 }
 

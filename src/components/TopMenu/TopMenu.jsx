@@ -39,6 +39,9 @@ export const TopMenu = () => {
             <li className="top-menu__item" onClick={togglePaymentModal}>
               Payment methods
             </li>
+            <li className="top-menu__item">
+              <Link to="/delivery">Delivery zones</Link>
+            </li>
             <li className="top-menu__item" onClick={toggleServiceHoursModal}>
               Service hours
             </li>

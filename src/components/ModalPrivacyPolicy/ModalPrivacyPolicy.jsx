@@ -15,7 +15,7 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
           <IoClose className="modal__top-close-icon" />
         </button>
       </div>
-      <div className="modal__document">
+      <div className="modal__main">
         <p className="modal__document-text">
           RESTBURGER ("Restaurant") is committed to protecting the privacy of
           all users of Restaurant’s website, or mobile applications (together,
@@ -694,6 +694,15 @@ export const ModalPrivacyPolicy = ({ togglePrivacyPolicy }) => {
             </ol>
           </li>
         </ol>
+        <div className="modal__back-container">
+          <button
+            type="button"
+            className="modal__back-btn"
+            onClick={togglePrivacyPolicy}
+          >
+            Back
+          </button>
+        </div>
       </div>
     </Modal>
   );

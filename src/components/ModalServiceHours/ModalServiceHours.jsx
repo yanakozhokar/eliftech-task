@@ -33,15 +33,15 @@ export const ModalServiceHours = ({ toggleServiceHoursModal }) => {
             </tr>
           </tbody>
         </table>
-      </div>
-      <div className="modal__back-container">
-        <button
-          type="button"
-          className="modal__back-btn"
-          onClick={toggleServiceHoursModal}
-        >
-          Back
-        </button>
+        <div className="modal__back-container">
+          <button
+            type="button"
+            className="modal__back-btn"
+            onClick={toggleServiceHoursModal}
+          >
+            Back
+          </button>
+        </div>
       </div>
     </Modal>
   );
